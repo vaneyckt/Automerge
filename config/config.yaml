@@ -1,0 +1,16 @@
+---
+# The account that will be used for communicating with GitHub.
+:github_login: github_login
+:github_password: github_password
+
+# The repository that contains the pull requests you want to merge automatically.
+# For example, if you wanted to automatically merge the pull requests of the Automerge repository,
+# you would put git@github.com:vaneyckt/Automerge.git here.
+:github_ssh_repository: git@github.com:vaneyckt/Automerge.git
+
+# The interval between successive communications with GitHub.
+# This makes sure we don't end up spamming GitHub's servers.
+:github_polling_interval_seconds: 300
+
+# The name of the user whose pull requests should be merged automatically.
+:observed_user: vaneyckt
