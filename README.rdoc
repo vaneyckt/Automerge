@@ -1,6 +1,6 @@
 == Introduction
 
-Automerge is a Ruby app that automatically merges the pull requests of a given user. The status of the last commit of a relevant pull request needs to have been set to 'success' before Automerge will consider merging it. Automerge relies on other programs that use the {Github Commit Status API}[https://github.com/blog/1227-commit-status-api], such as (such as {Jently}[https://github.com/vaneyckt/Jently]), to update the status of pull requests.
+Automerge is a Ruby app that automatically merges the pull requests of a given user. The status of the last commit of a relevant pull request needs to have been set to 'success' before Automerge will consider merging it. Automerge relies on other programs that use the {Github Commit Status API}[https://github.com/blog/1227-commit-status-api], such as {Jently}[https://github.com/vaneyckt/Jently], to update the status of pull requests.
 
 == Getting Started
 
