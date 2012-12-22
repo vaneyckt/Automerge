@@ -26,4 +26,6 @@ A configuration file can be found in the /config directory. There are a few conf
 
 Navigate into the Automerge folder and run:
 
-    ruby automerge.rb
+    ruby automerge_control.rb start
+
+This command will start Automerge as a daemon process in the background.
