@@ -1,7 +1,7 @@
 ---
 # The account that will be used for communicating with GitHub.
 :github_login: github_login
-:github_password: github_password
+:github_access_token: github_access_token
 
 # The repository that contains the pull requests you want to merge automatically.
 # For example, if you wanted to automatically merge the pull requests of the Automerge repository,

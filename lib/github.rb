@@ -6,7 +6,7 @@ module Github
     begin
       config = ConfigFile.read
       repository_id = Repository.get_id
-      client = Octokit::Client.new(:login => config[:github_login], :password => config[:github_password])
+      client = Octokit::Client.new(:login => config[:github_login], :access_token => config[:github_access_token])
       open_pull_requests = client.pull_requests(repository_id, 'open')
       open_pull_requests_ids = open_pull_requests.collect { |pull_request| pull_request.number }
     rescue => e
@@ -18,7 +18,7 @@ module Github
     begin
       config = ConfigFile.read
       repository_id = Repository.get_id
-      client = Octokit::Client.new(:login => config[:github_login], :password => config[:github_password])
+      client = Octokit::Client.new(:login => config[:github_login], :access_token => config[:github_access_token])
       pull_request = client.pull_request(repository_id, pull_request_id)
       statuses = client.statuses(repository_id, pull_request.head.sha)
 
@@ -42,7 +42,7 @@ module Github
     begin
       config = ConfigFile.read
       repository_id = Repository.get_id
-      client = Octokit::Client.new(:login => config[:github_login], :password => config[:github_password])
+      client = Octokit::Client.new(:login => config[:github_login], :access_token => config[:github_access_token])
       client.merge_pull_request(repository_id, pull_request_id)
     rescue => e
       Logger.log('Error when merging pull request', e)
